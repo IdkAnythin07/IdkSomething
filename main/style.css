@@ -1,0 +1,125 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background for modern look */
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.header {
+  background: linear-gradient(
+    45deg,
+    rgba(106, 27, 154, 0.85),
+    rgba(156, 39, 176, 0.85)
+  ); /* Gradient purple header */
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.button {
+  background-color: rgba(124, 77, 255, 0.85); /* Semi-transparent purple */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(149, 117, 205, 0.85); /* Lighter purple on hover */
+}
+
+/* Menu Icon Style */
+.menu-icon {
+  color: #bb86fc; /* Purple accent */
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Start off-screen */
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.95); /* Dark background */
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  z-index: 999; /* Below the menu icon */
+}
+
+/* When the menu is active */
+.menu-active {
+  left: 0; /* Bring into view */
+  opacity: 1; /* Gradually increase opacity */
+}
+
+/* When exiting the menu */
+.menu-exit {
+  left: 0;
+  opacity: 0; /* Gradually decrease opacity */
+}
+
+/* Menu */
+.menu {
+  position: relative;
+  width: 250px;
+  background: #1f1f1f; /* Slightly lighter dark shade for contrast */
+  height: 100%;
+  padding: 75px 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #bb86fc; /* Purple accent */
+}
