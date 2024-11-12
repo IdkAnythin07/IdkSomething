@@ -10,3 +10,9 @@ include("/main/menu.js");
 include("/main/website_list/list_websites.js");
 include("/main/callouts_main.js");
 include("/main/website_list/callouts.js");
+
+// FOR DEBUG
+// include("~/code/idkanythin07.github.io/main/menu.js");
+// include("~/code/idkanythin07.github.io/main/website_list/list_websites.js");
+// include("~/code/idkanythin07.github.io/main/callouts_main.js");
+// include("~/code/idkanythin07.github.io/main/website_list/callouts.js");

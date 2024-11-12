@@ -7,5 +7,6 @@ function include(file) {
 }
 
 include("/main/menu.js");
-//include("/prog/html/test/main/website_list/list_websites.js");
+// include("~/code/idkanythin07.github.io/main/menu.js"); // FOR DEBUG
 include("/main/callouts_main.js");
+// include("~/code/idkanythin07.github.io/main/callouts_main.js"); // FOR DEBUG
